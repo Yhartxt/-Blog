@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Blog</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#inicio" class="logo">Tu Nombre</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#entradas">Entradas</a>
+      <a href="#sobre-mi">Sobre mí</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="eyebrow">Estudiante de Ingeniería en Software</p>
+      <h1>Aprendiendo, construyendo y escribiendo sobre ello.</h1>
+      <p class="lead">Aquí comparto lo que voy descubriendo sobre bases de datos, desarrollo web y apps con Kotlin.</p>
+      <a href="#entradas" class="btn">Leer entradas</a>
+    </section>
+
+    <section id="entradas" class="section">
+      <div class="section-head">
+        <h2>Entradas</h2>
+        <input type="search" id="buscar" placeholder="Buscar…" aria-label="Buscar entradas">
+      </div>
+      <div id="listaEntradas" class="grid"></div>
+      <p id="vacio" class="muted" hidden>No hay entradas que coincidan.</p>
+    </section>
+
+    <section id="sobre-mi" class="section about">
+      <h2>Sobre mí</h2>
+      <p>Soy estudiante de cuarto semestre de Ingeniería en Software. Mi área más fuerte son las bases de datos y ahora aprendo desarrollo web y apps Android con Kotlin.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="anio"></span> Tu Nombre</p>
+  </footer>
+
+  <script src="/js/publicaciones.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
